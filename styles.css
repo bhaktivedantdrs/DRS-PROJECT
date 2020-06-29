@@ -49,4 +49,14 @@ h2{
     background-color: black;
 }
 
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.card-header{
+    background-color: black;
+}
+
 
