@@ -1,8 +1,11 @@
+
+// Auto size for Textarea
 $(document).ready(function () {
     autosize($('textarea'));
 });
 
 
+// Display project-task-activity
 $("#projectname").change(function() {
     if(document.getElementById("projectname").value != ""){
         $('#task').show();
@@ -20,8 +23,6 @@ $("#projectname").change(function() {
     }
     
 });
-
-
 $("#taskname").change(function() {
     if(document.getElementById("taskname").value != ""){
         $('#activity').show();
