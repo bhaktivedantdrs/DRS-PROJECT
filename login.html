@@ -28,17 +28,17 @@
                     <form>
                         <div class="form-row row  d-flex align-items-center justify-content-center">  
                             <div class="col-12  mt-2">
-                                <input type="text" class="form-control rounded-0"  placeholder="username" required></textarea>
+                                <input type="text" class="form-control rounded-0 target" id="username"  placeholder="username" required></textarea>
                             </div>
                         </div>
                         <div class="form-row row  d-flex align-items-center justify-content-center">  
                             <div class="col-12  mt-2">
-                                <input type="password" class="form-control rounded-0"  placeholder="Password" required></textarea>
+                                <input type="password" class="form-control rounded-0 target" id="password" placeholder="Password" required></textarea>
                             </div>
                         </div> 
                         <div class="form-row row  d-flex align-items-center justify-content-center">  
                             <div class="col-4 col-sm-3 mt-2">
-                                <button class="btn btn-dark form-control" id = "add" onclick="check()">Login</button>    
+                                <button class="btn btn-dark form-control" type = "button" id = "login">Login</button>    
                             </div> 
                         </div>  
                     </form>
@@ -60,10 +60,19 @@
         <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script>
-            function check(){
-                window.location.href="index.html";
-            }
+            $( document ).ready(function(){
+                $("#login").on("click",function(){
+                    if(document.getElementById("username").value=="" || document.getElementById("password").value== ""){
+                        alert("something is missing!!");
+                    }
+                    else{
+                        window.location.href="index.html";
+                    }
+                    
+                });
+            });
         </script>
+    
 
         <!-- <script src="https://cdn.jsdelivr.net/npm/autosize@4.0.2/dist/autosize.min.js"></script> -->
         <!-- <script src="node_modules/autosize/dist/autosize.min.js"></script> -->
