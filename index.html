@@ -16,15 +16,16 @@
     </head>
     <body class ="jumbotron">
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-            <div class="container">
+            <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand mr-auto" href="#"> <a class="navbar-brand mr-auto" href="#"><img src="img/logo.gif" height="30" width="100"></a></a>
-                <div class="collapse navbar-collapse ml-5" id="Navbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class = "nav-item active ml-md-5"><a class = "nav-link" href="#"><i class="fa fa-clock-o"></i> Time Tracker</a></li>
-                        <li class = "nav-item ml-md-4"><a class = "nav-link" href="./work.html"><i class="fa fa-tasks"></i> Work</a></li> 
+                <a class="navbar-brand mr-auto" href="#"> <a class="navbar-brand mr-auto" href="#"><img src="img/logo2.png" height="30" width="100"></a></a>
+                <div class="collapse navbar-collapse ml-5 "  id="Navbar">
+                    <ul class=" col-12 navbar-nav ml-md-5">
+                        <li class = "nav-item active ml-md-4"><a class = "nav-link" href="#"><i class="fa fa-clock-o"></i> Time Tracker</a></li>
+                        <li class = "nav-item  ml-md-4"><a class = "nav-link" href="./work.html"><i class="fa fa-tasks"></i> Work</a></li>    
+                        <li class = "nav-item  offset-md-8"><a class = "nav-link" href="./login.html"><i class="fa fa-sign-out"></i> Log out</a></li> 
                     </ul>
                 </div>
             </div>
@@ -83,11 +84,11 @@
                                 </select>       
                             </div> 
                             <div class="col-6 col-sm-2 mt-2">
-                                <input type="time" class="form-control"  required>   
+                                <input type="text" class="form-control" onfocus="(this.type='time')" placeholder="Start Time" onblur="(this.type='text')" required>   
                             </div>  
                             <div class="col-6 col-sm-2 mt-2 ">
-                                <input type="time" class="form-control"  required>   
-                            </div>  
+                                <input type="text" class="form-control" onfocus="(this.type='time')" placeholder="End Time" onblur="(this.type='text')" required>   
+                            </div> 
                             <div class="col-6 col-sm-2 mt-2 ">
                                 <input type="date" class="form-control" required>   
                             </div> 
