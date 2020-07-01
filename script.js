@@ -33,6 +33,20 @@ $("#taskname").change(function() {
 });
 
 
+// Show and Hide for Add button
+$( document ).ready(function(){
+    $(".target").change(function() {
+        if(document.getElementById("activityname").value=="" || document.getElementById("tag").value== "" || document.getElementById("starttime").value=="" || document.getElementById("endtime").value=="" || document.getElementById("date").value =="" || document.getElementById("comment").value==""){
+            $('#add').hide();
+        }
+        else{
+            $('#add').show();
+        }  
+    });
+});
+
+
+// On click of Add
 $( document ).ready(function(){
     $("#add").on("click",function(e){
         alert("Time Tracked Successfully.");

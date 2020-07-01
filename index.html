@@ -72,10 +72,10 @@
                     <form>
                         <div class="form-row row  d-flex align-items-center justify-content-center">  
                             <div class="col-6 col-sm-2 mt-2 ">
-                                    <input type="text" class="form-control" placeholder="Activity Name" required>
+                                    <input type="text" class="form-control target" id="activityname" placeholder="Activity Name" required>
                             </div>  
                             <div class="col-6 col-sm-2 mt-2 ">
-                                <select class="form-control" required>
+                                <select class="form-control target" id="tag" required>
                                     <option value = "" >Tags</option>
                                     <option value="Meeting">Meeting</option>
                                     <option value = "Research">Research</option>
@@ -84,13 +84,13 @@
                                 </select>       
                             </div> 
                             <div class="col-6 col-sm-2 mt-2">
-                                <input type="text" class="form-control" onfocus="(this.type='time')" placeholder="Start Time" onblur="(this.type='text')" required>   
+                                <input type="time" class="form-control target" id="starttime"  required>   
                             </div>  
                             <div class="col-6 col-sm-2 mt-2 ">
-                                <input type="text" class="form-control" onfocus="(this.type='time')" placeholder="End Time" onblur="(this.type='text')" required>   
+                                <input type="time" class="form-control target" id="endtime"  required>   
                             </div> 
                             <div class="col-6 col-sm-2 mt-2 ">
-                                <input type="date" class="form-control" required>   
+                                <input type="date" class="form-control target" id="date" required>   
                             </div> 
                             <div class="col-6 col-sm-2 mt-2">                                     
                                 <input type="file" class="form-control-file" >
@@ -98,12 +98,12 @@
                         </div>
                         <div class="form-row row  d-flex align-items-center justify-content-center">  
                             <div class="col-12  mt-2">
-                                <textarea type="text" class="form-control rounded-0"  placeholder="What have you done?" required></textarea>
+                                <textarea type="text" class="form-control rounded-0 target"  placeholder="What have you done?" id="comment" required></textarea>
                             </div>
                         </div> 
                         <div class="form-row row  d-flex align-items-center justify-content-center">  
                             <div class="col-3 col-sm-1 mt-2">
-                                <button class="btn btn-dark form-control" id = "add">Add</button>    
+                                <button class="btn btn-dark form-control" id = "add" style="display: none;">Add</button>    
                             </div> 
                         </div>  
                     </form>
