@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+         <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+         <!-- Font-Awesome CSS -->
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="styles.css">
+        <title>BVH PROJECT</title>
+    </head>
+    <body class ="jumbotron">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#"> <a class="navbar-brand mr-auto" href="#"><img src="img/logo2.png" height="30" width="100"></a></a>
+                <div class="collapse navbar-collapse ml-5 "  id="Navbar">
+                    <ul class=" col-12 navbar-nav ml-md-5">
+                        <li class = "nav-item active ml-md-4"><a class = "nav-link" href="./director.html"><i class="fa fa-check-circle"></i> Create Project</a></li>
+                        <li class = "nav-item  ml-md-4"><a class = "nav-link" href="./directorwork.html"><i class="fa fa-tasks"></i> Work</a></li>    
+                        <li class = "nav-item  offset-md-8"><a class = "nav-link" href="./login.html"><i class="fa fa-sign-out"></i> Log out</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header >
+            <div class ="container head mt-md-2">     
+                <h2>Welcome Director Side,</h2>
+            </div>
+        </header>
+           
+        <div class ="container data mt-md-3" id = "activity" >
+            <div class="row row-content">
+                <div class="col-12">
+                    <form>
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-6 col-sm-2 mt-2 ">
+                                    <input type="text" class="form-control target" id="projectname" placeholder="Project Name" required>
+                            </div>  
+                            <div class="col-6 col-sm-2 mt-2 ">
+                                <select class="form-control target" id="departmentname" required>
+                                    <option value = "" >Department Name</option>
+                                    <option value="Meeting">Department 1</option>
+                                    <option value = "Research">Department 2</option>
+                                    <option value = "Development">Department 3</option>
+                                    <option value="Prayer">Department 4</option>
+                                </select>       
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class ="container data mt-md-3" id = "create1" >
+            <div class="form-row row  d-flex align-items-center justify-content-center">  
+                <div class="col-3 col-sm-1 mt-2">
+                    <button class="btn btn-dark form-control" id = "create" >Create</button>    
+                </div> 
+            </div>  
+                    
+        </div>
+        
+        <footer>
+
+        </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/autosize@4.0.2/dist/autosize.min.js"></script>
+        <!-- <script src="node_modules/autosize/dist/autosize.min.js"></script> -->
+        <script src="directorscript.js"></script>
+    </body>
+</html>
