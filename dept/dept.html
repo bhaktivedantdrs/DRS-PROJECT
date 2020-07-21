@@ -1,0 +1,82 @@
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+         <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+         <!-- Font-Awesome CSS -->
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="styles.css">
+        <title>BVH PROJECT</title>
+    </head>
+    <body class ="jumbotron">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#"> <a class="navbar-brand mr-auto" href="#"><img src="img/logo.gif" height="30" width="100"></a></a>
+                <div class="collapse navbar-collapse ml-5 "  id="Navbar">
+                    <ul class=" col-12 navbar-nav ml-md-5">
+                        <li class = "nav-item active ml-md-4"><a class = "nav-link" href="#"><i class="fa fa-clock-o"></i> Time Tracker</a></li>
+                        <li class = "nav-item  ml-md-4"><a class = "nav-link" href="./work.html"><i class="fa fa-tasks"></i> Work</a></li>    
+                        <li class = "nav-item  offset-md-8"><a class = "nav-link" href="./login.html"><i class="fa fa-sign-out"></i> Log out</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class ="container data mt-md-3"  id = "project">
+            <div class="row row-content">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-sm-6">
+                        <select  class="form-control" id="projectname">
+                            <option value = "" >Projects</option>
+                            <option value="BVH">DRS</option>
+                            <option value = "SRS">SRS</option>
+                        </select> 
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class ="container data mt-md-3" id = "task" style="display: none;">
+            <div class="row row-content">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-sm-6">
+                        <input type="checkbox" id="n" name="em1" value="Smita"> Smita Choudary <br>
+                        <input type="checkbox" id="n" name="em1" value="Shivangi"> Shivangi Thakur<br>
+                        <input type="checkbox" id="n" name="em1" value="Ravi"> Ravi Singh<br>
+                        <input type="checkbox" id="n" name="em1" value="Sameer"> Sameer Gupta<br>
+                        <input type="checkbox" id="n" name="em1" value="Rohit"> Rohit Dubey  <br>
+                    </div> 
+                    <button type="submit" onclick=" " >ADD </button>
+                </div>
+            </div>
+        </div>    
+
+         <footer>
+
+        </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/autosize@4.0.2/dist/autosize.min.js"></script>
+        <!-- <script src="node_modules/autosize/dist/autosize.min.js"></script> -->
+        <script src="script.js"></script>
+    </body>
+</html>
+
+

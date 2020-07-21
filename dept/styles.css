@@ -1,0 +1,60 @@
+.row-header{
+    margin:0px auto;
+    padding:0px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px ridge;
+    min-height:0px;
+    background:	aliceblue;
+}
+
+/* .footer{
+    background-color: #D1C4E9;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+} */
+
+.jumbotron {
+    margin:0px auto;
+    background: white;
+    
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+     background-color: black;
+}
+
+.head{
+    margin-top: 40px;
+    min-height: 40px;
+}
+
+.data{
+    margin-top: 20px;
+}
+
+h2{
+    color: black;
+}
+
+.btn{
+    background-color: black;
+}
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.card-header{
+    background-color: black;
+}
