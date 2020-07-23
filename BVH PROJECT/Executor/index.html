@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+         <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+         <!-- Font-Awesome CSS -->
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="styles.css">
+        <title>BVH PROJECT</title>
+    </head>
+    <body class ="jumbotron">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#"> <a class="navbar-brand mr-auto" href="#"><img src="img/logo2.png" height="30" width="100"></a></a>
+                <div class="collapse navbar-collapse ml-5 "  id="Navbar">
+                    <ul class=" col-12 navbar-nav ml-md-5">
+                        <li class = "nav-item active ml-md-4"><a class = "nav-link" href="#"><i class="fa fa-clock-o"></i> Time Tracker</a></li>
+                        <li class = "nav-item  ml-md-4"><a class = "nav-link" href="./work.html"><i class="fa fa-tasks"></i> Work</a></li>    
+                        <li class = "nav-item  offset-md-8"><a class = "nav-link" href="./login.html"><i class="fa fa-sign-out"></i> Log out</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header >
+            <div class ="container head mt-md-2">     
+                <h2>Welcome Executor Side,</h2>
+            </div>
+        </header>
+        <div class ="container data mt-md-3"  id = "project">
+            <div class="row row-content">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-sm-6">
+                        <select  class="form-control" id="projectname">
+                            <option value = "" >Projects</option>
+                            <option value="BVH">DRS</option>
+                            <option value = "SRS">SRS</option>
+                        </select> 
+                    </div>  
+    
+                </div>
+            </div>
+        </div>
+        <div class ="container data mt-md-3" id = "task" style="display: none;">
+            <div class="row row-content">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-12 col-sm-6">
+                        <select class="form-control" id="taskname" >
+                            <option value = "" >Task</option>
+                            <option value = "RequirementGathering">Requirement Gathering</option>
+                            <option value="Planning">Planning</option>
+                            <option value="Modelling">Modelling</option>
+                            <option value="Analysis">Analysis</option>
+                            <option value="Construction">Construction</option>
+                            <option value="Deployment">Deployment</option>
+                        </select>   
+                    </div> 
+                </div>
+            </div>
+        </div>    
+        <div class ="container data mt-md-3" id = "activity" style="display: none;">
+            <div class="row row-content">
+                <div class="col-12">
+                    <form>
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-6 col-sm-2 mt-2 form-group">
+                                    <label class = " mb-0" for="activityname">Activity Name:</label>
+                                    <input type="text" class="form-control target" id="activityname" placeholder="Activity Name" required>
+                            </div>  
+                            <div class="col-6 col-sm-2 mt-2 form-group">
+                                <label class = " mb-0" for="tag">Select Tag:</label>
+                                <select class="form-control target" id="tag" required>
+                                    <option value = "" >Tags</option>
+                                    <option value="Meeting">Meeting</option>
+                                    <option value = "Research">Research</option>
+                                    <option value = "Development">Development</option>
+                                    <option value="Prayer">Prayer</option>
+                                </select>       
+                            </div> 
+                            <div class="col-6 col-sm-2 mt-2 form-group">
+                                <label class = " mb-0" for="starttime">Start Time:</label>
+                                <input type="time" class="form-control target" id="starttime"  required>   
+                            </div>  
+                            <div class="col-6 col-sm-2 mt-2 form-group">
+                                <label class = " mb-0" for="endtime">End Time:</label>
+                                <input type="time" class="form-control target" id="endtime"  required>   
+                            </div> 
+                            <div class="col-6 col-sm-2 mt-2 form-group">
+                                <label class = " mb-0" for="date">Date:</label>
+                                <input type="date" class="form-control target" id="date" required>   
+                            </div> 
+                            <div class="col-6 col-sm-2 mt-2 form-group">   
+                                <label class = " mb-0" for="file">Upload File</label>                                  
+                                <input type="file" class="form-control-file" id="file" >
+                            </div>
+                        </div>
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-12  mt-2 form-group">
+                                <label class = " mb-0" for="Comment">Comment:</label>
+                                <textarea type="text" class="form-control rounded-0 target"  placeholder="What have you done?" id="comment" required></textarea>
+                            </div>
+                        </div> 
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-3 col-sm-1 mt-2">
+                                <button class="btn btn-dark form-control" id = "add" style="display: none;">Add</button>    
+                            </div> 
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+
+        </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/autosize@4.0.2/dist/autosize.min.js"></script>
+        <!-- <script src="node_modules/autosize/dist/autosize.min.js"></script> -->
+        <script src="script.js"></script>
+    </body>
+</html>

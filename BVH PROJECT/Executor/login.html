@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+         <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+         <!-- Font-Awesome CSS -->
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="styles.css">
+        <title>BVH PROJECT</title>
+    </head>
+    <body class ="jumbotron d-flex align-items-center justify-content-center"> 
+    
+        <div class="col-12 col-sm-4">
+            <div class="card">
+                <div class = "card-header d-flex align-items-center justify-content-center" >
+                    <img class = "card-header" src="img/logo2.png" height="70" width="250">
+                </div>
+                <!-- <h3 class="card-header  text-white text-center">Login</h3> -->
+                
+                <div class="card-body">
+                    <div class= "col-12"> 
+                    <form>
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-12  mt-2">
+                                <input type="text" class="form-control rounded-0 target" id="username"  placeholder="username" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-12  mt-2">
+                                <input type="password" class="form-control rounded-0 target" id="password" placeholder="Password" required></textarea>
+                            </div>
+                        </div> 
+                        <div class="form-row row  d-flex align-items-center justify-content-center">  
+                            <div class="col-4 col-sm-3 mt-2">
+                                <button class="btn btn-dark form-control" type = "button" id = "login">Login</button>    
+                            </div> 
+                        </div>  
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+  
+        <footer>
+
+        </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script>
+            $( document ).ready(function(){
+                $("#login").on("click",function(){
+                    if(document.getElementById("username").value=="" || document.getElementById("password").value== ""){
+                        alert("something is missing!!");
+                    }
+                    else{
+                        window.location.href="index.html";
+                    }
+                    
+                });
+            });
+        </script>
+    
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/autosize@4.0.2/dist/autosize.min.js"></script> -->
+        <!-- <script src="node_modules/autosize/dist/autosize.min.js"></script> -->
+       
+    </body>
+</html>
